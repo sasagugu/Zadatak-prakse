@@ -2,6 +2,8 @@
 
 ## Live demo
 
+https://sasagugu.github.io/Zadatak-prakse/
+
 ### Instalation
 
 ```bash
