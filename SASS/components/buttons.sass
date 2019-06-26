@@ -1,0 +1,39 @@
+button:hover
+    cursor: pointer
+
+
+button
+    border: none
+    padding: 1rem 2rem
+    border: .2rem solid transparent
+    margin-left: 1rem
+    transition: .2s all   
+
+.header__buttons
+    
+
+    &-quote
+        background: #5aaa5a
+        color: white
+
+        &:hover
+            background: white
+            border: .2rem solid #5aaa5a
+            color: #5aaa5a
+    
+    &-account
+        color: #414164
+        border: .2rem solid #414164
+        background:none
+
+        &:hover
+            color: white
+            background: #414164
+
+@media (max-width: 650px)
+    .header__buttons
+        display: flex
+        flex-direction: column
+
+        &-quote
+            margin-bottom: 1rem

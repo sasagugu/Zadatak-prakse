@@ -1,0 +1,52 @@
+.menu
+    ul
+        list-style: none
+        
+        li
+            margin: 2rem 0
+
+            a
+                text-decoration: none
+                color: grey
+                font-size: 1.4rem
+
+
+#menu
+    visibility: hidden
+
+
+label
+    opacity: 0
+
+.close 
+    visibility: hidden
+
+@media (max-width: 920px)
+    .menu
+        ul
+            height: 0
+            li
+                visibility: hidden
+                a
+
+    label
+        opacity: 1
+        font-size: 1.6rem
+        font-weight: 500
+        letter-spacing: 1px
+        margin-top: 3rem
+    
+    #menu:checked ~ .open    
+        visibility: hidden
+
+    #menu:checked ~ .close    
+        visibility: visible
+
+    #menu:checked ~ ul
+        height: auto
+
+    #menu:checked ~ ul li
+        visibility: visible
+    
+    
+
